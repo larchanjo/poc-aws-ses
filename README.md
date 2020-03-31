@@ -7,7 +7,7 @@ This is a poc using [AWS SDK](https://aws.amazon.com/sdk-for-java/) and [AWS SES
 * [IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
 * [AWS SES (Simple Email Service)](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/sign-up-for-aws.html)
 
-# Setup
+# Setup Application
 
 You need to configure the following environment variables:
 
