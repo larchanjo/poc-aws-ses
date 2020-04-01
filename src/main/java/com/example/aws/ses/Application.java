@@ -35,16 +35,6 @@ public class Application {
       throw new RuntimeException("Missing TO_EMAIL environment variable");
     }
 
-    String accessKey = System.getenv("AWS_ACCESS_KEY_ID");
-    if (Objects.isNull(accessKey)) {
-      throw new RuntimeException("Missing AWS_ACCESS_KEY_ID environment variable");
-    }
-
-    String accessSecret = System.getenv("AWS_SECRET_ACCESS_KEY");
-    if (Objects.isNull(accessSecret)) {
-      throw new RuntimeException("Missing AWS_SECRET_ACCESS_KEY environment variable");
-    }
-
     try {
       AmazonSimpleEmailService client = AmazonSimpleEmailServiceClientBuilder
           .standard()
