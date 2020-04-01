@@ -1,5 +1,6 @@
 package com.example.aws.ses;
 
+import com.amazonaws.auth.EnvironmentVariableCredentialsProvider;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClientBuilder;
@@ -48,6 +49,7 @@ public class Application {
       AmazonSimpleEmailService client = AmazonSimpleEmailServiceClientBuilder
           .standard()
           .withRegion(Regions.US_WEST_2)
+          .withCredentials(new EnvironmentVariableCredentialsProvider())
           .build();
 
       Destination destination = new Destination()
